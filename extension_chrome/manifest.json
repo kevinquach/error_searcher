@@ -7,8 +7,15 @@
 
   "permissions": [
   ],
+
   "browser_action": {
     "default_icon": "icon.png",
-    "default_popup": "results.html"
-  }
+    "default_popup": "results.html",
+    "default_title": "Click Me"
+  },
+
+  "content_scripts": [ {
+  "js": [ "jquery-1.10.2.min.js", "search.js"],
+  "matches": [ "http://*/*", "https://*/*"]
+  }]
 }
