@@ -13,7 +13,7 @@ The goal of this project is to create a bookmarklet for [Airbrake](airbrake.io),
 
 1. Make a bookmark in your bookmark bar and use the following url:
 
-  `javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://bencalegari.com/javascripts/errorsearcher_AB.js';})();`
+      javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://bencalegari.com/javascripts/errorsearcher_AB.js';})();
 
 2. Navigate to your project page in Airbrake.
 3. Choose any error from the left hand side.
