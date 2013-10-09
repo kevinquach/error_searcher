@@ -14,7 +14,8 @@ The goal of this project is to create a bookmarklet for [Airbrake](airbrake.io),
 1. Drag the link below to your bookmarks bar.
 
   [SA Searcher][1]
-    [1]: javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://bencalegari.com/javascripts/errorsearcher_AB.js';})();
+
+[1]: javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://bencalegari.com/javascripts/errorsearcher_AB.js';})();
 
 2. Navigate to your project page in Airbrake.
 3. Choose any error from the left hand side.
