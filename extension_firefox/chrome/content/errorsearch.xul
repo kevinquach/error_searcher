@@ -15,5 +15,4 @@
                  tooltiptext="Search errors on StackOverflow"
                  oncommand="buttonCLick[1]()"
                  class="toolbarbutton-1 chromeclass-toolbar-additional custombutton"/>
-
 </overlay>

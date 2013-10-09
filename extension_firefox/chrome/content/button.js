@@ -1,6 +1,9 @@
 buttonCLick = {
 
   1: function(){
-    alert("Hello World");
+    var myUrl = "chrome://errorsearch/content/results.html"
+    var tBrowser = document.getElementById("content");
+    var tab = tBrowser.addTab(myUrl);
+    tBrowser.selectedTab = tab;
   },
 }
