@@ -6,13 +6,12 @@
   "version": "0.1",
 
   "permissions": [
-    "activeTab",
-    "tabs"
+    "tabs",
+    "<all_urls>"
   ],
 
   "background":{
-    "scripts": ["background.js", "main.js", "jquery-1.10.2.min.js" ],
-    "persistent": false
+    "scripts": ["background.js", "main.js", "jquery-1.10.2.min.js"]
   },
 
   "browser_action": {
@@ -22,13 +21,12 @@
 
   "content_scripts": [ {
     "js": [
-      "jquery-1.10.2.min.js",
-      "search.js"
+      "content.js"
     ],
     "matches": [
       "http://*/*",
       "https://*/*"
-    ]
+    ],
   }],
 
   "web_accessible_resources": [
