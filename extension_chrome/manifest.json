@@ -10,7 +10,13 @@
   ],
 
   "background":{
-    "scripts": ["background.js", "main.js", "jquery-1.10.2.min.js"]
+    "scripts": [
+      "background.js",
+      "main.js",
+      "process_localHost.js",
+      "query_stackOverflow.js",
+      "compile_result.js",
+      "jquery-1.10.2.min.js"]
   },
 
   "browser_action": {

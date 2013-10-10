@@ -9,7 +9,8 @@ chrome.browserAction.onClicked.addListener( function(tab){
           'active': false
           },
           function(new_tab) {
-            var result = parseError( body_html , tab.url );
+            var result = generateSearchResults( body_html , tab.url );
+            alert( result );
           }
       );
     }
