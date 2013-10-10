@@ -1,2 +1,5 @@
-content     sample    chrome/content/
-overlay chrome://browser/content/browser.xul chrome://sample/content/sample.xul
+content     errorsearch    chrome/content/
+
+style chrome://global/content/customizeToolbar.xul chrome://errorsearch/content/button.css
+
+overlay chrome://browser/content/browser.xul chrome://errorsearch/content/errorsearch.xul

@@ -7,6 +7,7 @@
     <em:id>{e01419b7-7356-4e56-bead-83397c002926}</em:id>
     <em:version>1.0</em:version>
     <em:type>2</em:type>
+    <em:iconURL>chrome://errorsearch/content/icon.png</em:iconURL>
 
     <!-- Target Application this extension can install into,
          with minimum and maximum supported versions. -->
@@ -20,7 +21,7 @@
 
     <!-- Front End MetaData -->
     <em:name>Error Searcher</em:name>
-    <em:description>Finds error reports on the current page and searchs Stack Overflow for the answer</em:description>
+    <em:description>Finds error reports on the current page and searches Stack Overflow for the answer</em:description>
     <em:creator>Carl Schwope</em:creator>
     <em:homepageURL>http://www.github.com/Lowest0ne/error_searcher</em:homepageURL>
   </Description>
