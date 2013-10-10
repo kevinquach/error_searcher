@@ -11,11 +11,11 @@ The goal of this project is to create a bookmarklet for [Airbrake](airbrake.io),
 
 ### How to use ErrorSearcher bookmarklet with Airbrake.io
 
-1. Drag the link below to your bookmarks bar.
+1. Make a bookmark in your bookmark bar and use the following url:
 
-  [SA Searcher][1]
-
-[1]: javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://bencalegari.com/javascripts/errorsearcher_AB.js';})();
+  ```
+  javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://bencalegari.com/javascripts/errorsearcher_AB.js';})();
+  ```
 
 2. Navigate to your project page in Airbrake.
 3. Choose any error from the left hand side.
