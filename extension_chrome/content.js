@@ -1,14 +1,4 @@
-/*
-chrome.extension.onMessage.addListener( function( request, sender, sendResponse )
+chrome.runtime.onMessage.addListener( function( request, sender, sendResponse )
 {
-  alert('message recieved');
-
-  //sendResponse({response:'hello'});
-  //return 'hello'
-
-
-
+  sendResponse({response:document.body.outerHTML})
 });
-*/
-
-//chrome.runtime.sendMessage({greeting: "hello", function( response ){ alert(response); });
