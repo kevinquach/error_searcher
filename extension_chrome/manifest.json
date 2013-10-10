@@ -23,7 +23,8 @@
   "content_scripts": [ {
     "js": [
       "jquery-1.10.2.min.js",
-      "search.js"
+      "search.js",
+      "main.js"
     ],
     "matches": [
       "http://*/*",
@@ -32,6 +33,7 @@
   }],
 
   "web_accessible_resources": [
-    "results.html"
+    "results.html",
+    "jquery-1.10.2.min.js"
   ]
 }
