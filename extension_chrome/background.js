@@ -14,7 +14,7 @@ click_event = undefined;
 
 function onCreateTab( new_tab ){
   var result = generateSearchResults( click_event.response , click_event.url );
-  alert( result );
+  // alert(result);
 }
 
 function onMessageRecieved( response ){
