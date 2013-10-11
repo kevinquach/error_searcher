@@ -1,7 +1,6 @@
 chrome.browserAction.onClicked.addListener( function(tab){
 
-
-  chrome.tabs.sendMessage(tab.id, {greeting: "hello"},
+  chrome.tabs.sendMessage(tab.id, {},
     function(response){
       body_html = response.response;
       chrome.tabs.create({
