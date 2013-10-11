@@ -12,19 +12,15 @@ function ClickEvent( tab ) {
 
 click_event = undefined;
 
-function onCreateTab( new_tab ){
-  var result = generateSearchResults( click_event.response , click_event.url );
-  // alert(result);
+function processHtml( result ){
+  var newHtml = generateSearchResults( result[0] , click_event.url );
+  var url = "data:text/html," + encodeURIComponent(newHtml);
+  chrome.tabs.create({url: url});
 }
-
-function onMessageRecieved( response ){
-  click_event.response = response.response
-  chrome.tabs.create( click_event.tab_options, onCreateTab );
-};
-
 function buttonClick( current_tab ) {
   click_event = new ClickEvent( current_tab );
-  chrome.tabs.sendMessage(click_event.id, {}, onMessageRecieved );
+  chrome.tabs.executeScript({ code: 'document.body.outerHTML' }, processHtml);
 }
+
 
 chrome.browserAction.onClicked.addListener( buttonClick );
