@@ -17,7 +17,6 @@ function processHtml( result ){
   var url = "data:text/html," + encodeURIComponent(newHtml);
   chrome.tabs.create({url: url});
 }
-
 function buttonClick( current_tab ) {
   click_event = new ClickEvent( current_tab );
   chrome.tabs.executeScript({ code: 'document.body.outerHTML' }, processHtml);
