@@ -6,16 +6,37 @@
   "version": "0.1",
 
   "permissions": [
+    "tabs"
   ],
+
+  "background":{
+    "scripts": [
+      "background.js",
+      "main.js",
+      "process_localHost.js",
+      "query_stackOverflow.js",
+      "compile_result.js",
+      "jquery-1.10.2.min.js"]
+  },
 
   "browser_action": {
     "default_icon": "icon.png",
-    "default_popup": "results.html",
-    "default_title": "Click Me"
+    "default_title": "Search errors on Stack Overflow"
   },
 
   "content_scripts": [ {
-  "js": [ "jquery-1.10.2.min.js", "search.js"],
-  "matches": [ "http://*/*", "https://*/*"]
-  }]
+    "js": [
+      "content.js"
+    ],
+    "matches": [
+      "http://*/*",
+      "https://*/*"
+    ],
+    "all_frames": true,
+    "run_at": "document_end"
+  }],
+
+  "web_accessible_resources": [
+    "results.html"
+  ]
 }
